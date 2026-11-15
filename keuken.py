@@ -238,8 +238,10 @@ UITZICHT_BREEDTE = 4200
 
 # Tegels op de kookplaatwand (Muur 6), tussen werkblad en bovenkasten.
 # Liggend 120 x 60 cm, vanaf de hoek met Muur 5; het restant komt rechts bij Muur 7.
-# Dezelfde tegel herhaalt zich; het bladpatroon loopt over de voeg door.
-TEGEL = dict(b=1200, h=600, voeg=2, foto="//textures/tegel_bladeren_zonder_label.jpg")   # prijskaartje rechtsboven weggeretoucheerd
+# Het bladpatroon loopt over de voeg door naar de volgende tegel. Textuur: één tegelbreedte (herhaalt exact
+# elke 1691 px) uit de sfeerfoto tegels/studiolitter60x120_*.jpg, belichting gelijkgetrokken en de kleur
+# afgestemd op onze showroomfoto (textures/tegel_bladeren.jpg).
+TEGEL = dict(b=1200, h=600, voeg=2, foto="//textures/tegel_studio_litter.jpg")
 
 # Staafjesmozaiek (2 x 15 cm, matten van 30 x 30 cm) op Muur 4, Muur 5 en Muur 7,
 # tot de onderkant van de bovenkasten. Kleuren gemiddeld uit de twee mozaiekfoto's.
