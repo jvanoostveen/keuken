@@ -14,6 +14,7 @@ aan te passen zijn.
 | `echte_tegels.py` | Maakt tegeltexturen uit productfoto's van echte tegels (`tegels/kandidaten/`). |
 | `dagverloop.py` | Video van een dag (zonnestand Amersfoort, keuken op het noorden). |
 | `tools/render.py` | Hulp om een variant te bouwen en camerastandpunten te renderen. |
+| `tools/ideeen_renders.py` | Rendert de beelden voor `Keuken ideeën.pdf` (vaste camerastandpunten) naar `renders/ideeen/`. |
 | `tools/pdf.sh` | HTML-document naar PDF via Chrome, controle met poppler in een container. |
 | `Keuken.blend` | Basisbestand. `Keuken - variaties.blend` is het werkbestand voor varianten; `Keuken - okt versie.blend` is een bewaarde momentopname. |
 | `ideeen/` | Bron van het actuele gespreksdocument (`index.html` + `img/`) → `Keuken ideeën.pdf`. |
