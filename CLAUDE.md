@@ -35,8 +35,14 @@ Communiceer in het Nederlands; de eigenaren zijn geen Blender-experts.
 - PDF = HTML (A4 liggend) + `tools/pdf.sh`. Bron van een document hoort in de repo (zoals `ideeen/`),
   niet in de scratchpad: die wordt gewist.
 - Controleer elke pagina als PNG (`tools/pdf.sh <html> <pdf> png <map>`) op overlopende tekst en lege vlakken.
-- Gespreksdocumenten voor BMN: geen vragenlijst en geen "officiële" wijzigingstabel in het document; open
-  vragen apart in de chat.
+- Gespreksdocumenten: geen vragenlijst en geen "officiële" wijzigingstabel in het document; open vragen apart
+  in de chat.
+- Noem de leverancier (BMN) niet bij naam in `Keuken ideeën.pdf` (`ideeen/`), ook niet in schema's; gebruik
+  "nu" of "het voorstel". Controleer de bron op "BMN" voordat je de PDF opnieuw maakt.
+
+## Git
+
+- Direct op `main` committen, geen branches.
 
 ## Niet doen
 

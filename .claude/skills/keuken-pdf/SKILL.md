@@ -24,6 +24,7 @@ klapt in, gebruik `flex: none`), vervormde beelden (`object-fit`), te kleine lab
 
 ## Inhoud
 - Gespreksdocument, niet zakelijk: geen vragenlijst en geen wijzigingstabel; vragen apart in de chat.
+- `Keuken ideeën.pdf`: noem de leverancier (BMN) nergens, ook niet in schema's (`grep -ri bmn ideeen/`).
 - Alleen de huidige keuzes tonen; alternatieven alleen waar nog getwijfeld wordt (bijv. wit/eiken).
 - Productnamen exact (decortegel: Argenta Studio Litter; werkblad: Dekker TopCore Sparrow;
   kraan: Quooker Classic Fusion Square; spoelbak: SDE-0047).
