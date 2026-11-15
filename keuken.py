@@ -63,8 +63,8 @@ WERKBLAD_DIKTE = 32
 WERKBLAD_DIEPTE = 600
 FRONT_DIKTE = 19
 NAAD = 3                     # naad tussen fronten
-BOVENKAST_ONDERKANT = 1430   # 942 + 488
-BOVENKAST_H = 780            # bovenkant op 2210
+BOVENKAST_ONDERKANT = 1542   # 942 + 600: een hele decortegel (60 hoog) tussen werkblad en bovenkast
+BOVENKAST_H = 780            # bovenkant op 2322, daarboven 40 montageruimte tot de koof
 BOVENKAST_DIEPTE = 320       # korpus, + front = 340
 BOVENKAST_GREPEN = False     # False = greeploos (push-to-open)
 HOGEKAST_H = 2080            # bovenkant op 130 + 2080 = 2210
@@ -91,7 +91,7 @@ RUIMTE = dict(
     raam_boven=2280,
     raam_rechterdeel=520,  # breedte van het rechter deel met bovenlicht + draaikiepraam
     raam_bovenlicht=380,
-    koof_hoogte=200,       # koof boven het raam langs Muur 5
+    koof_hoogte=138,       # koof boven het raam langs Muur 5; was 200, verlaagd voor de hogere bovenkasten
     koof_diepte=200,
 )
 
@@ -119,9 +119,8 @@ VARIANTEN = {
             dict(naam="Passtuk", b=50, type="passtuk"),
         ],
         boven=[
-            dict(naam="Passtuk", b=100, type="passtuk"),
-            dict(naam="Bovenkast 40", b=400),
-            dict(naam="Bovenkast 40", b=400),
+            dict(naam="Bovenkast 45", b=450),   # 45 + 45 = hoekkast 90 eronder, geen passtuk bij het raam
+            dict(naam="Bovenkast 45", b=450),
             dict(naam="Bovenkast 45", b=450),
             dict(naam="Wasemkapkast 60", b=600, afzuigkap=True),
             dict(naam="Bovenkast 50", b=500),
@@ -137,9 +136,8 @@ VARIANTEN = {
             dict(naam="Passtuk", b=50, type="passtuk"),
         ],
         boven=[
-            dict(naam="Passtuk", b=100, type="passtuk"),
-            dict(naam="Bovenkast 40", b=400),
-            dict(naam="Bovenkast 40", b=400),
+            dict(naam="Bovenkast 45", b=450),   # 45 + 45 = hoekkast 90 eronder, geen passtuk bij het raam
+            dict(naam="Bovenkast 45", b=450),
             dict(naam="Bovenkast 50", b=500),
             dict(naam="Wasemkapkast 60", b=600, afzuigkap=True),
             dict(naam="Bovenkast 45", b=450),
@@ -251,7 +249,7 @@ MOZAIEK = dict(
     midden=(0.56, 0.63, 0.62),
     rand=(0.20, 0.25, 0.27),     # donkerder glazuur langs de randjes
     voegkleur=(0.86, 0.82, 0.76),
-    tot=1430,                    # bovenkant in mm (= onderkant bovenkasten)
+    tot=1542,                    # bovenkant in mm (= onderkant bovenkasten)
 )
 MOZAIEK_DIKTE = 0.008         # tegel + lijm, in meters
 
