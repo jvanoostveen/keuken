@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Plattegrond keuken</title>
+<style>
+  @page { size: 297mm 210mm; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #faf9f6; color: #2b2d2a;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.8pt; line-height: 1.4;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page {
+    width: 297mm; height: 210mm; padding: 12mm 15mm 8mm;
+    position: relative; overflow: hidden; page-break-after: always;
+    display: flex; flex-direction: column;
+  }
+  .page:last-child { page-break-after: auto; }
+  .kop {
+    display: flex; justify-content: space-between; font-size: 8.5pt; letter-spacing: .08em;
+    color: #6f716c; text-transform: uppercase; padding-bottom: 2.5mm; border-bottom: 1px solid #d9d8d3; margin-bottom: 5mm;
+  }
+  .kop span:last-child { letter-spacing: 0; text-transform: none; }
+  h1 { font-size: 28pt; line-height: 1.1; margin: 1mm 0 4mm; letter-spacing: -.01em; }
+  h2 { font-size: 19pt; line-height: 1.2; margin: 0 0 4mm; letter-spacing: -.005em; }
+  .lead { font-size: 11pt; color: #6f716c; margin: 0 0 5mm; }
+  .card { background: #fff; border: 1px solid #dcdbd6; border-radius: 2.5mm; padding: 4mm 4.5mm; margin-bottom: 3.5mm; }
+  .label { font-size: 9.5pt; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #6b7a66; margin: 0 0 1.5mm; }
+  .card p { margin: 0 0 1.5mm; }
+  .card p:last-child { margin-bottom: 0; }
+  .card ul { margin: 0; padding-left: 4.5mm; }
+  .card li { margin-bottom: 1mm; }
+  table { border-collapse: collapse; width: 100%; }
+  td { padding: 1.5mm 2.5mm; border-bottom: 1px solid #d9d8d3; vertical-align: top; }
+  td:first-child { font-weight: 700; width: 30%; }
+  figure { margin: 0; }
+  figure img { display: block; width: 100%; object-fit: cover; border-radius: 1.5mm; }
+  figcaption { font-size: 8pt; color: #6f716c; margin-top: 1mm; line-height: 1.3; }
+  .voet { font-size: 7.5pt; color: #6f716c; margin-top: auto; }
+  .swatch { display: flex; align-items: center; gap: 3mm; margin-bottom: 2.5mm; }
+  .swatch:last-child { margin-bottom: 0; }
+  .swatch i { flex: none; width: 12mm; height: 12mm; border-radius: 1.5mm; border: 1px solid #d0cfca; background-size: cover; background-position: center; }
+  .swatch b { display: block; font-size: 10pt; }
+  .swatch small { display: block; font-size: 8pt; color: #6f716c; line-height: 1.25; }
+  .idee { font-style: italic; color: #6f716c; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="kop"><span>Keuken Amelisweerd 15 · Plattegrond</span><span>november 2026</span></div>
+  <figure style="flex:1;min-height:0;display:flex;flex-direction:column;align-items:center">
+    <img src="img/plattegrond.svg" style="flex:1;min-height:0;width:100%;object-fit:contain;border-radius:0">
+    <figcaption>Plattegrond van de keuken, maten in mm.</figcaption>
+  </figure>
+</section>
+
+</body>
+</html>

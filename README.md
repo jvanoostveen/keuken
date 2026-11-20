@@ -17,8 +17,8 @@ aan te passen zijn.
 | `tools/ideeen_renders.py` | Rendert de beelden voor `Keuken ideeën.pdf` (vaste camerastandpunten) naar `renders/ideeen/`. |
 | `tools/pdf.sh` | HTML-document naar PDF via Chrome, controle met poppler in een container. |
 | `Keuken.blend` | Basisbestand. `Keuken - variaties.blend` is het werkbestand voor varianten; `Keuken - okt versie.blend` is een bewaarde momentopname. |
-| `ideeen/` | Bron van het actuele gespreksdocument (`index.html` + `img/`) → `Keuken ideeën.pdf`. |
-| `*.pdf` (root) | Gegenereerde documenten: `Keuken ideeën.pdf` (actueel), `Keuken stand van zaken.pdf`, `Tegels en muurkleur.pdf`, `Keukenvoorstellen.pdf` (eerste ronde, achterhaald). |
+| `ideeen/` | Bron van het actuele gespreksdocument (`index.html` + `img/`) → `Keuken ideeën.pdf`; `plattegrond.html` → `Plattegrond.pdf`. |
+| `*.pdf` (root) | Gegenereerde documenten: `Keuken ideeën.pdf` (actueel), `Plattegrond.pdf` (losse plattegrond), `Keuken stand van zaken.pdf`, `Tegels en muurkleur.pdf`, `Keukenvoorstellen.pdf` (eerste ronde, achterhaald). |
 | `renders/` | Gerenderde beelden, per onderwerp in submappen. Video's (`*.mp4`) staan in `.gitignore`. |
 | `textures/` | Texturen die het model laadt (uitzicht, decortegel, wandtegels, Sparrow-korrel). |
 | `bmn/` | Offerte en tekeningen van BMN (v1 PDF, v2 afbeeldingen): bron voor alle maten. |
@@ -80,6 +80,7 @@ Documenten zijn HTML-pagina's (A4 liggend, `@page` in de CSS) met beelden uit `r
 
 ```bash
 tools/pdf.sh ideeen/index.html "Keuken ideeën.pdf"
+tools/pdf.sh ideeen/plattegrond.html "Plattegrond.pdf"
 ```
 
 Met `png <map>` erachter worden ook alle pagina's als PNG weggeschreven om de opmaak te controleren.
